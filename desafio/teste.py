@@ -1,11 +1,8 @@
-print('Gerador de PA')
-print('=-=-' * 5)
-primeiro = int(input('Digite o primeiro termo: '))
-razao = int(input('Razao da PA: '))
-termo = primeiro
-cont = 1
-while cont <= 10:
-    print('{} -> '.format(termo), end='')
-    termo += razao
-    cont += 1
-print('Fim')
+palavra = ('Aprender', 'Programar', 'Linguagem', 'Python', 'Curso', 
+           'Gratis', 'Estudar', 'Praticar', 'Trabalhar', 'Mercado',
+             'Programador', 'Futuro')
+for p in palavra:
+    print(f'\nNa palavra {p.upper()} temos ', end='')
+    for letra in p:
+        if letra.lower() in 'aeiou':
+            print(letra, end='')
